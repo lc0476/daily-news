@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BBC Daily News · 历史归档</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <div class="brand">
+        <span class="logo">🌍</span>
+        <div>
+          <h1>BBC Daily News · 历史归档</h1>
+          <p class="tagline">每日国际新闻精选 · 自动生成</p>
+        </div>
+      </div>
+    </div>
+  </header>
+  <main class="container">
+    <section class="hero">
+      <h2>📚 历史归档</h2>
+      <p class="hero-summary">所有已发布的每日早报。点击日期查看完整内容。</p>
+    </section>
+    <div class="archive-list" id="archive-list">
+      <p style="text-align: center; color: var(--text-soft);">加载中...</p>
+    </div>
+  </main>
+  <script>
+    // 自动发现 pages/*.html
+    fetch('index.json')
+      .then(r => r.ok ? r.json() : [])
+      .then(list => {
+        const c = document.getElementById('archive-list');
+        if (!list.length) {
+          c.innerHTML = '<p style="text-align: center; color: var(--text-dim);">暂无历史归档</p>';
+          return;
+        }
+        c.innerHTML = list.reverse().map(item => `
+          <div class="archive-item">
+            <a href="${item.file}">${item.title}</a>
+            <span class="archive-meta">${item.count} 条 · ${item.date}</span>
+          </div>
+        `).join('');
+      })
+      .catch(() => {
+        document.getElementById('archive-list').innerHTML =
+          '<p style="text-align: center; color: var(--text-dim);">暂无历史归档</p>';
+      });
+  </script>
+  <footer class="site-footer">
+    <p>由 Hermes Agent 每日自动生成 · 数据来源 BBC News · 仅供学习参考</p>
+  </footer>
+</body>
+</html>
