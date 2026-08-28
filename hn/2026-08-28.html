@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hacker News 科技热榜 · 2026-08-28</title>
+  <link rel="stylesheet" href="../styles.css">
+  <style>
+    /* HN 早报专属样式 */
+    .hn-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 20px;
+      margin-bottom: 16px;
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+    .hn-card:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 8px 16px rgba(255, 102, 0, 0.15);
+    }
+    .hn-rank {
+      display: inline-block;
+      background: linear-gradient(135deg, #ff6600 0%, #ff8533 100%);
+      color: white;
+      width: 32px;
+      height: 32px;
+      border-radius: 8px;
+      text-align: center;
+      line-height: 32px;
+      font-weight: 700;
+      font-size: 14px;
+      margin-right: 12px;
+      vertical-align: middle;
+    }
+    .hn-title-zh {
+      color: var(--text-main);
+      font-size: 17px;
+      font-weight: 600;
+      line-height: 1.5;
+      margin-bottom: 6px;
+    }
+    .hn-title-en {
+      color: var(--text-soft);
+      font-size: 13px;
+      font-style: italic;
+      margin-bottom: 10px;
+    }
+    .hn-meta {
+      display: flex;
+      gap: 12px;
+      flex-wrap: wrap;
+      align-items: center;
+      font-size: 13px;
+      color: var(--text-soft);
+    }
+    .hn-score {
+      background: rgba(255, 102, 0, 0.15);
+      color: #ff6600;
+      padding: 4px 10px;
+      border-radius: 12px;
+      font-weight: 600;
+    }
+    .hn-comments {
+      background: rgba(108, 117, 125, 0.15);
+      color: var(--text-soft);
+      padding: 4px 10px;
+      border-radius: 12px;
+    }
+    .hn-by {
+      color: var(--text-soft);
+    }
+    .hn-link {
+      color: #ff6600;
+      text-decoration: none;
+      font-weight: 500;
+    }
+    .hn-link:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>💻 Hacker News 科技热榜</h1>
+      <p class="date">2026年08月28日</p>
+    </header>
+
+        <div class="hn-card">
+      <div>
+        <span class="hn-rank">1</span>
+        <a href="https://blog.cloudflare.com/dns-cache-memory-optimization-1111/" target="_blank" class="hn-link">
+          <div class="hn-title-zh">通过优化1.1.1.1的DNS缓存节省100TB内存</div>
+          <div class="hn-title-en">Saving 100 terabytes of memory by optimizing 1.1.1.1&#x27;s DNS cache</div>
+        </a>
+      </div>
+      <div class="hn-meta">
+        <span class="hn-score">▲ 671 分</span>
+        <span class="hn-comments">💬 200 评论</span>
+        <span class="hn-by">by TangerineDream</span>
+        <a href="https://news.ycombinator.com/item?id=49468083" target="_blank" class="hn-link">查看讨论 →</a>
+      </div>
+    </div>
+    <div class="hn-card">
+      <div>
+        <span class="hn-rank">2</span>
+        <a href="https://calv.info/small-models-have-arrived" target="_blank" class="hn-link">
+          <div class="hn-title-zh">小型模型来了</div>
+          <div class="hn-title-en">Small Models Have Arrived</div>
+        </a>
+      </div>
+      <div class="hn-meta">
+        <span class="hn-score">▲ 588 分</span>
+        <span class="hn-comments">💬 267 评论</span>
+        <span class="hn-by">by tosh</span>
+        <a href="https://news.ycombinator.com/item?id=49466917" target="_blank" class="hn-link">查看讨论 →</a>
+      </div>
+    </div>
+    <div class="hn-card">
+      <div>
+        <span class="hn-rank">3</span>
+        <a href="https://neilalexander.dev/2026/06/30/flooding-contributions" target="_blank" class="hn-link">
+          <div class="hn-title-zh">请停止用AI垃圾填充我们的项目来装点你的简历</div>
+          <div class="hn-title-en">Please stop flooding our projects with AI slop to furnish your CV</div>
+        </a>
+      </div>
+      <div class="hn-meta">
+        <span class="hn-score">▲ 141 分</span>
+        <span class="hn-comments">💬 70 评论</span>
+        <span class="hn-by">by signa11</span>
+        <a href="https://news.ycombinator.com/item?id=49474143" target="_blank" class="hn-link">查看讨论 →</a>
+      </div>
+    </div>
+    <div class="hn-card">
+      <div>
+        <span class="hn-rank">4</span>
+        <a href="https://github.com/elyosh/OpenTIE/" target="_blank" class="hn-link">
+          <div class="hn-title-zh">展示 HN：OpenTIE 和 OpenXWA，《钛战机》和《X-Wing 联盟》的现代移植版</div>
+          <div class="hn-title-en">Show HN: OpenTIE and OpenXWA, Modern Ports of Tie Fighter and X-Wing Alliance</div>
+        </a>
+      </div>
+      <div class="hn-meta">
+        <span class="hn-score">▲ 136 分</span>
+        <span class="hn-comments">💬 30 评论</span>
+        <span class="hn-by">by elyosh</span>
+        <a href="https://news.ycombinator.com/item?id=49471965" target="_blank" class="hn-link">查看讨论 →</a>
+      </div>
+    </div>
+    <div class="hn-card">
+      <div>
+        <span class="hn-rank">5</span>
+        <a href="https://507movements.com/" target="_blank" class="hn-link">
+          <div class="hn-title-zh">507种机械运动</div>
+          <div class="hn-title-en">507 Mechanical Movements</div>
+        </a>
+      </div>
+      <div class="hn-meta">
+        <span class="hn-score">▲ 549 分</span>
+        <span class="hn-comments">💬 70 评论</span>
+        <span class="hn-by">by helloplanets</span>
+        <a href="https://news.ycombinator.com/item?id=49465169" target="_blank" class="hn-link">查看讨论 →</a>
+      </div>
+    </div>
+    <div class="hn-card">
+      <div>
+        <span class="hn-rank">6</span>
+        <a href="https://bankstatementconverter.com/blog/posts/2026-08-28-business-is-dying/" target="_blank" class="hn-link">
+          <div class="hn-title-zh">我的生意正在衰败</div>
+          <div class="hn-title-en">My Business Is Dying</div>
+        </a>
+      </div>
+      <div class="hn-meta">
+        <span class="hn-score">▲ 45 分</span>
+        <span class="hn-comments">💬 20 评论</span>
+        <span class="hn-by">by 4pkjai</span>
+        <a href="https://news.ycombinator.com/item?id=49474776" target="_blank" class="hn-link">查看讨论 →</a>
+      </div>
+    </div>
+    <div class="hn-card">
+      <div>
+        <span class="hn-rank">7</span>
+        <a href="https://www.terminal-bench-science.ai/announcement" target="_blank" class="hn-link">
+          <div class="hn-title-zh">终端基准科学：评估AI代理在科学研究工作流程中的表现</div>
+          <div class="hn-title-en">Terminal-Bench-Science: Evaluating AI agents on scientific research workflows</div>
+        </a>
+      </div>
+      <div class="hn-meta">
+        <span class="hn-score">▲ 68 分</span>
+        <span class="hn-comments">💬 17 评论</span>
+        <span class="hn-by">by matt_d</span>
+        <a href="https://news.ycombinator.com/item?id=49472820" target="_blank" class="hn-link">查看讨论 →</a>
+      </div>
+    </div>
+    <div class="hn-card">
+      <div>
+        <span class="hn-rank">8</span>
+        <a href="https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-3-5-transcribe/" target="_blank" class="hn-link">
+          <div class="hn-title-zh">Gemini-3.5-转录</div>
+          <div class="hn-title-en">Gemini-3.5-Transcribe</div>
+        </a>
+      </div>
+      <div class="hn-meta">
+        <span class="hn-score">▲ 235 分</span>
+        <span class="hn-comments">💬 71 评论</span>
+        <span class="hn-by">by k9294</span>
+        <a href="https://news.ycombinator.com/item?id=49468818" target="_blank" class="hn-link">查看讨论 →</a>
+      </div>
+    </div>
+    <div class="hn-card">
+      <div>
+        <span class="hn-rank">9</span>
+        <a href="https://pollen-robotics.com/microduck/" target="_blank" class="hn-link">
+          <div class="hn-title-zh">微鸭</div>
+          <div class="hn-title-en">Microduck</div>
+        </a>
+      </div>
+      <div class="hn-meta">
+        <span class="hn-score">▲ 608 分</span>
+        <span class="hn-comments">💬 207 评论</span>
+        <span class="hn-by">by robotswantdata</span>
+        <a href="https://news.ycombinator.com/item?id=49462763" target="_blank" class="hn-link">查看讨论 →</a>
+      </div>
+    </div>
+    <div class="hn-card">
+      <div>
+        <span class="hn-rank">10</span>
+        <a href="https://github.com/experientiallabs/experiential" target="_blank" class="hn-link">
+          <div class="hn-title-zh">展示 HN：我们构建了开源 OpenRouter，将使用量转化为更好的模型</div>
+          <div class="hn-title-en">Show HN: We built open OpenRouter that turns usage into a better model</div>
+        </a>
+      </div>
+      <div class="hn-meta">
+        <span class="hn-score">▲ 160 分</span>
+        <span class="hn-comments">💬 26 评论</span>
+        <span class="hn-by">by SilenN</span>
+        <a href="https://news.ycombinator.com/item?id=49471407" target="_blank" class="hn-link">查看讨论 →</a>
+      </div>
+    </div>
+
+    <footer>
+      <p style="text-align: center; color: var(--text-soft); margin-top: 40px;">
+        数据来源: <a href="https://news.ycombinator.com" target="_blank" class="hn-link">Hacker News</a>
+        · 翻译: MiniMax · 2026-08-28 14:42 CST
+      </p>
+    </footer>
+  </div>
+</body>
+</html>
